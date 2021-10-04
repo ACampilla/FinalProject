@@ -183,53 +183,6 @@ nav .icon-burger .line {
 .dropdown:hover .dropbtn {
   background-color: #808080;
 }
-
-
-/* ETTORE*/
-.wrapper{
-  margin: 0 10px;
-  width: 350px;
-}
-#ettoret{
-  padding: 0 10px;
-  font-size: 55px;
-  font-family: serif;
-}
-#ettore-brown{
-  color: #808080;
-  padding: 0 10px;
-  font-size: 30px;
-  font-family: serif;
-}
-.ettore{
-  font-size: 20px;
-}
-
-/*ettore image*/
-#ettore-img1{
-  margin: 0 30px;
-  width: 25%;
-  right: 10px;
-  position: absolute;
-  top: 0px;
-}
-.bestsellers{
-  padding: 0 60px;
-  width: 100%;
-}
-.pringles{
-  padding: 0 10px;
-  text-align: justify;
-  position: absolute;
-}
-#pringlestext{
-  text-align: center;
-  font-style: normal;
-}
-.cica{
-  padding: 0 20%;
-
-}
 /*search */
 .search {
   width: 100%;
@@ -265,53 +218,3 @@ nav .icon-burger .line {
   font-size: 20px;
 
 }
-/*search */
-
-/*Resize the wrap to see the search bar change!*/
-.wrap{
-  width: 30%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-/* Products */
-
-.containerimg{
-	max-width: 100%;
-	margin: auto;
-	background: #f2f2f2;
-	overflow: auto;
-}
-.gallery{
-	margin: 10px;
-	border: 1px solid #ccc;
-	float: left;
-	width: 390px;
-}
-.gallery img{
-	width: 100%;
-	height: auto%;
-}
-.description-gallery{
-	padding: 5px;
-	text-align: center;
-}
-.blazedesc1{
-	text-align: left;
-	font-style: normal;
-}
-.blazedesc2{
-	text-align: left;
-	font-style: normal;
-}
-.blazedesc3{
-	text-align: left;
-	font-size: 20px;
-	font-style: normal;
-}
-.blazedesc3.1{
-	text-align: left;
-	font-style: bold;
-}
-/* Products */

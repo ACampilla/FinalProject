@@ -49,7 +49,7 @@ nav .logo {
 }
 nav .links {
 	float: right;
-	padding: 0px;
+	padding: 0;
 	margin: 0;
 	width: 25%;
 	height: 100%;
@@ -183,53 +183,6 @@ nav .icon-burger .line {
 .dropdown:hover .dropbtn {
   background-color: #808080;
 }
-
-
-/* ETTORE*/
-.wrapper{
-  margin: 0 10px;
-  width: 350px;
-}
-#ettoret{
-  padding: 0 10px;
-  font-size: 55px;
-  font-family: serif;
-}
-#ettore-brown{
-  color: #808080;
-  padding: 0 10px;
-  font-size: 30px;
-  font-family: serif;
-}
-.ettore{
-  font-size: 20px;
-}
-
-/*ettore image*/
-#ettore-img1{
-  margin: 0 30px;
-  width: 25%;
-  right: 10px;
-  position: absolute;
-  top: 0px;
-}
-.bestsellers{
-  padding: 0 60px;
-  width: 100%;
-}
-.pringles{
-  padding: 0 10px;
-  text-align: justify;
-  position: absolute;
-}
-#pringlestext{
-  text-align: center;
-  font-style: normal;
-}
-.cica{
-  padding: 0 20%;
-
-}
 /*search */
 .search {
   width: 100%;
@@ -267,51 +220,49 @@ nav .icon-burger .line {
 }
 /*search */
 
-/*Resize the wrap to see the search bar change!*/
-.wrap{
-  width: 30%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+/* Login */
+.login {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
 }
-/* Products */
-
-.containerimg{
-	max-width: 100%;
-	margin: auto;
-	background: #f2f2f2;
-	overflow: auto;
+body{
+	background: url('https://i.ytimg.com/vi/RovleibldJ4/maxresdefault.jpg') no-repeat;
+	background-size: cover;
 }
-.gallery{
-	margin: 10px;
-	border: 1px solid #ccc;
-	float: left;
-	width: 390px;
+.login {
+	width: 350px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	color: #000000;
 }
-.gallery img{
-	width: 100%;
-	height: auto%;
-}
-.description-gallery{
-	padding: 5px;
+.login h1{
+	font-size: 50px;
 	text-align: center;
+	text-transform: uppercase;
+	margin: 40px 0;
 }
-.blazedesc1{
-	text-align: left;
-	font-style: normal;
+.login p{
+	font-size: 30px;
+	margin: 15px 0;
+	font-weight: bold;
 }
-.blazedesc2{
-	text-align: left;
-	font-style: normal;
+.login input{
+	font-size: 40px;
+	width: 100%;
+	padding: 15px 10;
+	border: 0;
+	outline: none;
+	border-radius: 5px;
 }
-.blazedesc3{
-	text-align: left;
-	font-size: 20px;
-	font-style: normal;
+.login button{
+	font-size: 25px;
+	font-weight: bold;
+	margin: 20px 0;
+	padding: 10px 15px;
+	width: 50%;
+	border-radius: 5px;
+	border: 0;
 }
-.blazedesc3.1{
-	text-align: left;
-	font-style: bold;
-}
-/* Products */
