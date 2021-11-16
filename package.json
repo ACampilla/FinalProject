@@ -1,19 +1,17 @@
 {
-  "name": "finalproject",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ACampilla/FinalProject.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ACampilla/FinalProject/issues"
-  },
-  "homepage": "https://github.com/ACampilla/FinalProject#readme"
-}
+    "name": "httpmodule",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "dependencies": {
+      "nodemon": "^2.0.13"
+    },
+    "devDependencies": {},
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "nodemon app2.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+  }

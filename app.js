@@ -1,10 +1,10 @@
-const express = require("express");
-const path = require("path");
-const logger = require("morgan");
-const cookieParser = require ("cookie-parser");
-const bodyParser = require ("body-parser");
+const http = require ('http');
 
+const server = http.createServer();
 
-var routes = require('./backend/routes');
+server.on("connection", (socket) => {
+    console.log("new request has been received....")
+});
+server.listen(3000);
 
-const app = express();
+console.log("listening to port 3000")
