@@ -1,4 +1,9 @@
 const http = require('http');
+const express = require("express");
+
+app = express();
+
+app.set("view engine","ejs");
 
 
 
@@ -24,4 +29,6 @@ const server = http.createServer((req, res) => {
 server.listen(8000);
 
 
+
 console.log("listening to port 8000")
+
