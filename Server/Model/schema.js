@@ -156,4 +156,4 @@ const Products = mongoose.model('Products', products);
 module.exports = Products;
 
 const Shipping = mongoose.model('Shipping', shipping);
-module.exports = Shipping;
+module.exports = Shipping; 
