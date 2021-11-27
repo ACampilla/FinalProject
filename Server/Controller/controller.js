@@ -1,3 +1,4 @@
+const Shipping = require('../Model/schema');
 var User = require ('../Model/schema');
 
 //create and save user
@@ -18,6 +19,41 @@ exports.create = (req,res)=>{
         Mobile_Number: req.body.Mobile_Number,
         Password:req.body.Password,
         Delivery_Address:req.body.Delivery_Address
+    })
+
+    //new Order
+
+    const order = new Order({
+         Order_ID:body.Order_ID,
+         Order_Status:body.Order_Status,
+         Order_Date:body.Order_Date,
+         Order_QTY: body.Order_QTY,
+         Order_Price: body.Order_Price,
+         Order_Users: body.Order_Users,
+         Order_Products: body.Order_Products
+
+        })
+
+    //new products
+
+    const products = new Products({
+        Prod_ID:body.Prod_ID,
+        Item:body.Item,
+        Unit_Price: body.Unit_Price,
+        Description:body.Description,
+        Category:body.Category
+    })
+
+
+    //new Shipping
+
+    const shipping = new Shipping({
+        Shipping_ID:body.Shipping_ID,
+        Shipping_Date:body.Shipping_Date,
+        Shipping_Fee:body.Shipping_Fee,
+        Shipping_Address:body.Shipping_Address,
+        Shipping_Order:body.Shipping_Order,
+        Shipping_User:body.Shipping_User
     })
 
     // save user in the database
