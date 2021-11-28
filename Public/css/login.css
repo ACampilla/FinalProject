@@ -1,6 +1,5 @@
 body {
-	padding: 0;
-	margin: 0;
+	background-color: lightblue;
 }
 .container {
 	position: relative;
@@ -218,6 +217,10 @@ nav .icon-burger .line {
   font-size: 20px;
 
 }
+.ettoreimg {
+	float: right;
+
+}
 
 /* Login */
 .login {
@@ -262,19 +265,26 @@ body{
 
 }
 .login button{ /*Read  More Settings */
-	font-size: 25px;
-	font-weight: bold;
-	margin: 20px 0;
-	padding: 10px 15px;
-	width: 50%;
-	border-radius: 15px;
-	border: 0;
-	background-color: #00AB08;
-	color: #8B0000;
+	background-color: #04AA6D;
+  color: #9a0e2a;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+	font-size: 20px;
+
 }
 #sign {
 	font-size: 25px;
 	font-family: serif;
 	font-style: normal;
 	font-weight: lighter;
+}
+.logout {
+	position: relative;
+	align-items: stretch;
+	float: right;
+	padding: 0 20px;
+	font-size: 40px;
+	font-weight: bold;
 }

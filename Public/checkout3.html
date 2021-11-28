@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <title>Login</title>
+  <title>Cart</title>
   <link rel="icon" href="https://i.imgur.com/rap2KIz.jpg" type="image/png" sizes="16x16">
   <meta charset="utf-8">
   <title>Skrrrt Shop PH - Buy Your Favorite KPOP Items Here!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/login.css">
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
-<body style="background-color:#ebebeb;">
+<body>
   <!-- HEADER -->
   <nav>
     <div class="dropdown">
@@ -47,25 +47,41 @@
 </nav>
 <br> <br> <br> <br> <br> <br>
 
-<a href="logout.html"><text class="logout">❌LOGOUT</text></a>
+<!-- Cart -->
+<div class="carttxt">
+  <text id="carting">Cart</text>
+    <text id="carting2">
+    Cart > <b>Checkout</b> > Order Completed
+    </text>
+    <div class="">
 
-<!-- Login -->
-<div class="login">
-  <h1>Login</h1>
-  <form class="" action="#" method="post">
-    <input type="text" name="user" placeholder="Email or Username">
-<br> <br>
-    <input type="text" name="password" placeholder="Password">
-     <br><br>
-    <center><button type="submit" name="button">Login</button>
-    <br><br><br><br>
-    <a href="signup.html" id="sign">Sign Up</a>
-    <text id="sign"> | </text>
-    <a href="forgotpassword.html" id="sign">Forgot Password</a></center>
+    </div>
+    <hr>
+</div><br><br>
 
-  </form>
-</div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<text class="accomplish2">
+<center> Please make sure that you have read the policy and you have accomplished the payment form otherwise <b>YOUR ORDER WILL BE DISREGARDED.</b> </center>
+ </text>
+ <div class="row"><br><br><br><br><br><br><br><br><br><br><br><br>
+   <center>
+     <h1>
+   <form action="ordercomplete.html">
+  <input type="checkbox" id="policy" name="policy" value="policy1">
+  <label for="policy"> I have read the POLICY</label><br>
+  <input type="checkbox" id="pform" name="pform" value="pform1">
+  <label for="policyform"> I have accomplished the PAYMENT FORM</label><br><br>
+   <input type="submit" value="Continue"></h1>
+
+
+   </center>
+ </div>
+
+  <h1>
+<!-- Cart -->
+
+
+<br><br><br><br><br><br>
+
 <hr>
 
   </body>

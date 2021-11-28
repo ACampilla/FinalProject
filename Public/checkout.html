@@ -36,7 +36,7 @@
 
   <!-- Search -->
   <li><a href="login.html">👨‍💼Account</a></li>
-  <li><a href="#projects">🛒Cart</a></li>
+  <li><a href="cart.html">🛒Cart</a></li>
   <li><a href="#contact">💬Help</a></li>
 </ul>
 <label for="nav-toggle" class="icon-burger">
@@ -51,62 +51,61 @@
 <div class="carttxt">
   <text id="carting">Cart</text>
     <text id="carting2">
-    <b>Cart > </b>Checkout > Order Completed
+    Cart > <b>Checkout</b> > Order Completed
     </text>
-
-
 </div>
-  <hr>
-  <div class="container">
+<hr><br><br>
+<div class="container">
+  <form action="checkout2.html">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname"><h1>Full Name</h1></label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="fullname" placeholder="Enter Full Name. . .">
+      </div>
+    </div>
 
-	<h1>Shopping Cart</h1>
+    <div class="row">
+      <div class="col-25">
+        <label for="contactnum"><h1>Contact Number</h1></label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="contactnum" name="contactnumber" placeholder="Enter Contact Number. . .">
+      </div>
+    </div>
 
-	<div class="cart">
-		<div class="products">
-			<div class="product">
-				<img src="./css/tribe.jpg">
-        <div class="product-info">
-					<h3 class="product-name">TRI.BE-TRI.BE BOTTLE</h3>
-					<h4 class="product-price">$17.84</h4>
-					<p class="product-quantity">Quantity: <input value="1" name="">
-					<p class="product-remove">
-						<i class="fa fa-trash" aria-hidden="true"></i>
-						<span class="remove">Remove</span>
-					</p>
-				</div>
+    <div class="row">
+      <div class="col-25">
+        <label for="caddress"><h1>Complete Address</h1></label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="caddress" name="completeaddress" placeholder="Enter Address. . .">
+      </div>
+    </div>
 
-			</div>
-
-			<div class="product">
-				<img src="./css/owen.jpg">
-				<div class="product-info">
-					<h3 class="product-name">OWEN T-SHIRT BLACK</h3>
-					<h4 class="product-price">$34.78</h4>
-					<p class="product-quantity">Quantity: <input value="1" name="">
-					<p class="product-remove">
-						<i class="fa fa-trash" aria-hidden="true"></i>
-						<span class="remove">Remove</span>
-					</p>
-				</div>
-
-			</div>
-
-		</div>
-
-		<div class="cart-total">
-			<p>
-				<span>Total Price</span>
-				<span>$52.62</span>
-			</p>
-			<p
-				<span>Number of Items</span>
-				<span>2</span>
-			</p>
-      <br><br>
-			<a href="checkout.html">Proceed to Checkout</a>
-		</div>
-	</div>
+    <div class="row">
+      <div class="col-25">
+        <label for="mop"><h1>Mode of Payment</h1></label>
+      </div>
+      <div class="col-75">
+        <select id="mop" name="mop">
+          <option value="Gcash">Gcash</option>
+          <option value="Paymaya">Paymaya</option>
+          <option value="BDO">Banco de Oro (BDO)</option>
+          <option value="BPI">Bank of the Philippine Islands (BPI)</option>
+        </select>
+      </div>
+    </div>
+    <br><br>
+    <div class="row">
+      <input type="submit" value="Continue">
+    </div>
+  </form>
 </div>
+
+
+  <h1>
 <!-- Cart -->
 
 
