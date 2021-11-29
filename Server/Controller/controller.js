@@ -14,20 +14,20 @@ exports.create = (req,res)=>{
     const user = new User({
      
         Acc_ID:req.body.Acc_ID,
-        Email_Address:req.body.Email_Address,
-        Fullname: req.body.Fullname,
-        Mobile_Number: req.body.Mobile_Number,
-        Password:req.body.Password,
-        Delivery_Address:req.body.Delivery_Address
+        Email_Address:req.body.email,
+        Fullname: req.body.fname,
+        Mobile_Number: req.body.mnum,
+        Password:req.body.pwd,
+        Delivery_Address:req.body.dAddress
     })
 
     // save user in the database
     user
         .save(user)
         .then(data => {
-            res.send(data)
+            
 
-          res.redirect('/home.html')
+          res.redirect('/signup2.html')
         })
         .catch(err =>{
             res.status(500).send({
