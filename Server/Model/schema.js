@@ -7,23 +7,24 @@ var user = new mongoose.Schema({
     },
     Email_Address:{
         type: String,
-        required:true
+        require: true
+        
     },
     Fullname: {
         type: String,
-        required:true
+        require: true
     },
     Mobile_Number:{
         type: Number,
-        required:true
+        require: true
     },
     Password:{
         type: String,
-        required:true
+        require: true
     },
     Delivery_Address:{
         type: String,
-        required:true
+        require: true
     }
 });
 

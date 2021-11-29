@@ -20,6 +20,7 @@ route.get('/merch', services.merch);
 route.get('/skincare', services.skincare);
 route.get('/tribe', services.tribe);
 
+route.get('/signup', services.signup)
 
 //API
 

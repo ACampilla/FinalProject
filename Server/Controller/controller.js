@@ -1,5 +1,5 @@
-const Shipping = require('../Model/schema');
-var User = require ('../Model/schema');
+
+const User = require ('../Model/schema');
 
 //create and save user
 
@@ -26,6 +26,8 @@ exports.create = (req,res)=>{
         .save(user)
         .then(data => {
             res.send(data)
+
+          res.redirect('/home.html')
         })
         .catch(err =>{
             res.status(500).send({

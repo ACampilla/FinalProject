@@ -24,3 +24,8 @@ exports.skincare = (req,res)=>{
 exports.tribe = (req,res)=>{
     res.render('tribe');
 }
+
+
+exports.signup =(req,res)=>{
+    res.render('signup')
+}
