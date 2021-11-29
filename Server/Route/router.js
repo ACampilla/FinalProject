@@ -25,8 +25,5 @@ route.get('/tribe', services.tribe);
 
 route.post('/api/users', controller.create);
 route.get('/api/users', controller.find);
-route.put('/api/users/:id', controller.update);
-route.delete('/api/:id', controller.delete);
-
 
 module.exports = route;
