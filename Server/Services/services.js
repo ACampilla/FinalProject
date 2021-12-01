@@ -1,3 +1,5 @@
+const { default: axios } = require("axios");
+
 exports.homeRoutes = (req,res) => {
     res.render('index');
 }
@@ -29,3 +31,4 @@ exports.tribe = (req,res)=>{
 exports.signup =(req,res)=>{
     res.render('signup')
 }
+

@@ -1,4 +1,3 @@
-
 const User = require ('../Model/schema');
 
 //create and save user
@@ -66,5 +65,23 @@ exports.find = (req, res)=>{
     }
 
     
+}
+
+
+//login
+exports.checkCredentials =(req,res)=>{
+    console.log(req.body)
+    
+    User.findOne({Email_Address: req.body.user}, function(err,user){
+        console.log(user)
+       
+
+        if(user.Password === req.body.password){
+            
+            res.redirect("/")
+        }else{
+            res.redirect("/login.html")
+        }
+    })
 }
 

@@ -7,7 +7,8 @@ var user = new mongoose.Schema({
     },
     Email_Address:{
         type: String,
-        require: true
+        require: true,
+        unique: true
         
     },
     Fullname: {
@@ -16,7 +17,8 @@ var user = new mongoose.Schema({
     },
     Mobile_Number:{
         type: Number,
-        require: true
+        require: true,
+        unique: true
     },
     Password:{
         type: String,

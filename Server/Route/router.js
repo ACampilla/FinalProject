@@ -27,4 +27,6 @@ route.get('/signup', services.signup)
 route.post('/api/users', controller.create);
 route.get('/api/users', controller.find);
 
+route.post('/login', controller.checkCredentials)
+
 module.exports = route;
