@@ -1,6 +1,6 @@
 let carts = document.querySelectorAll(".add-me"); 
 let products = 
-[
+/*[
 {
 	name: '[2CD SET)TXT (TOMORROWXTOGETHER)',
 	tag: 'https://www.ktown4u.com/goods_files/SH0164/goods_images/000063/GD00062657.default.1.png',
@@ -8,159 +8,159 @@ let products =
 	inCart: 0
 },
 {
-	name: 'Dog Toothpaste',
-	tag: 'dogToothpaste1',
-	price1: 120,
-	inCart: 0
+	name: '',
+	tag: '',
+	price1: ,
+	inCart: 
 },
 {
-	name: 'Dog Food (Medium Dogs)',
-	tag: 'dogfood1',
-	price1: 150,
-	inCart: 0
+	name: '',
+	tag: '',
+	price1: ,
+	inCart: 
 },
 {
-	name: 'Dog Food (small Dogs)',
-	tag: 'dogfood2',
-	price1: 150,
-	inCart: 0
+	name: '',
+	tag: '',
+	price1: ,
+	inCart: 
 },
 {
-	name: 'Dog Bowl (Bone stickers design)',
-	tag: 'dogBowl',
-	price1: 70,
-	inCart: 0
+	name: '',
+	tag: '',
+	price1: ,
+	inCart: 
 },
 {
-	name: 'Dog Cage',
-	tag: 'dogCage1',
-	price1: 500,
-	inCart: 0
+	name: '',
+	tag: '',
+	price1: ,
+	inCart: 
 },
 {
-	name: 'Dog Cage Topless(light blue)',
-	tag: 'dogCage2',
-	price1: 520,
-	inCart: 0
+	name: '',
+	tag: 'd',
+	price1: ,
+	inCart: 
 },
 {
-	name: 'Dog Collar Spiked',
-	tag: 'dogCollar',
-	price1: 70,
-	inCart: 0
+	name: '',
+	tag: '',
+	price1: ,
+	inCart: 
 },
 {
-	name: 'Dog Collar Neck Belt',
-	tag: 'dogCollar2',
-	price1: 75,
-	inCart: 0
+	name: '',
+	tag: '',
+	price1: ,
+	inCart: 
 },
 {
-	name: 'Dog Leash Leather Soft Braided',
-	tag: 'dogLeash',
-	price1: 75,
-	inCart: 0
+	name: '',
+	tag: '',
+	price1: ,
+	inCart: 
 },
 {
-	name: 'Dog Leash light Blue',
-	tag: 'dogLeash2',
-	price1: 80,
-	inCart: 0
+	name: '',
+	tag: '',
+	price1: ,
+	inCart: 
 },
 {
-	name: 'Dog Toys Pack 6pc.',
-	tag: 'dogtoys1',
-	price1: 60,
-	inCart: 0
+	name: '',
+	tag: 'd',
+	price1: ,
+	inCart: 
 },
 {
-	name: 'Dog Toys Soft plushies 6pc.',
-	tag: 'dogToys2',
-	price1: 65,
-	inCart: 0
+	name: '',
+	tag: '',
+	price1: ,
+	inCart: 
 },
 {
-	name: 'Cat Shampoo',
-	tag: 'catgrooming1',
-	price1: 120,
-	inCart: 0
+	name: '',
+	tag: '',
+	price1: ,
+	inCart: 
 },
 {
-	name: 'Cat Toothpaste',
-	tag: 'catToothpaste1',
-	price1: 120,
-	inCart: 0
+	name: '',
+	tag: '',
+	price1: ,
+	inCart: 
 },
 {
-	name: 'Cat Food (medium cats)',
-	tag: 'catfood1',
-	price1: 150,
-	inCart: 0
+	name: '',
+	tag: '',
+	price1: ,
+	inCart: 
 },
 {
-	name: 'Cat Food (small cats)',
-	tag: 'catfood2',
-	price1: 150,
-	inCart: 0
+	name: '',
+	tag: '',
+	price1: ,
+	inCart: 
 },
 {
-	name :'Cat Bowl',
-	tag: 'catBowl1',
-	price1: 70,
-	inCart: 0
+	name :'',
+	tag: '',
+	price1: ,
+	inCart: 
 },
 {
-	name: 'Cat Bowl Double',
-	tag: 'catBowl2',
-	price1: 120,
-	inCart: 0
+	name: '',
+	tag: '',
+	price1: ,
+	inCart: 
 },
 {
-	name: 'Cat Cage',
-	tag: 'catCage1',
-	price1: 500,
-	inCart: 0
+	name: '',
+	tag: '',
+	price1: ,
+	inCart: 
 },
 {
-	name: 'Cat Cage Portable Carrier',
-	tag: 'catCage2',
-	price1: 575,
-	inCart: 0
+	name: '',
+	tag: '',
+	price1: ,
+	inCart: 
 },
 {
-	name: 'Cat Collar(Pink)',
-	tag: 'catCollar1',
-	price1: 55,
-	inCart: 0
+	name: '',
+	tag: '',
+	price1: ,
+	inCart: 
 },
 {
-	name: 'Cat Collar(Stripe vest)',
-	tag: 'catCollar2',
-	price1: 60,
-	inCart: 0
+	name: '',
+	tag: '',
+	price1: ,
+	inCart: 
 },
 {
-	name: 'Cat Harness & Leash',					/* dito pa-edit, name and tag --yung tag is yung name lang ng image sa folder ng images pero nasa home.html naman--di ko sure yung price,,,,bali in order dapat simula ka sa taas ng mga products sa home.html hanggang sa pinakababa.. */
-	tag: 'catLeash1',
-	price1: 65,
-	inCart: 0
+	name: '',					
+	tag: '',
+	price1: ,
+	inCart: 
 },
 {
-	name: 'Cat Collar (summer style high blue-green)',
-	tag: 'catLeash2',
-	price1: 65,
-	inCart: 0
+	name: '',
+	tag: '',
+	price1: ,
+	inCart: 
 },
 {
-	name: 'Cat Toy Sushi cat w/ Sushi Roll',
-	tag: 'catToys2',
-	price1: 120,
-	inCart: 0
+	name: '',
+	tag: '',
+	price1: ,
+	inCart: 
 },
 
 
 
-]
+] */
 
 for (let i=0; i < carts.length; i++){
 	carts[i].addEventListener("click", () =>{
