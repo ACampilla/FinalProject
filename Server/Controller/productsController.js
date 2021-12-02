@@ -52,8 +52,8 @@ exports.find = (req, res)=>{
 
     }else{
         Products.find()
-            .then(user => {
-                res.send(user)
+            .then(products => {
+                res.send(products)
             })
             .catch(err => {
                 res.status(500).send({ message : err.message || "Error Occurred while retriving user information" })

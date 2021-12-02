@@ -19,8 +19,8 @@ exports.create = (req,res)=>{
         })
         
         
-        products
-        .save(products)
+        shipping
+        .save(shipping)
         .then(data => {
             
         
@@ -39,7 +39,7 @@ exports.create = (req,res)=>{
             if(req.query.id){
                 const id = req.query.id;
         
-                Products.findById(id)
+                Shipping.findById(id)
                     .then(data =>{
                         if(!data){
                             res.status(404).send({ message : "Not found user with id "+ id})
@@ -52,9 +52,9 @@ exports.create = (req,res)=>{
                     })
         
             }else{
-                Products.find()
-                    .then(user => {
-                        res.send(user)
+                Shipping.find()
+                    .then(shipping => {
+                        res.send(shipping)
                     })
                     .catch(err => {
                         res.status(500).send({ message : err.message || "Error Occurred while retriving user information" })
