@@ -24,12 +24,12 @@ exports.create = (req,res)=>{
     })
 
     // save user in the database
-    user
-        .save(user)
+    order
+        .save(order)
         .then(data => {
             
 
-          res.redirect('/signup2.html')
+          res.redirect('/')
         })
         .catch(err =>{
             res.status(500).send({
@@ -45,7 +45,7 @@ exports.find = (req, res)=>{
     if(req.query.id){
         const id = req.query.id;
 
-        User.findById(id)
+        Order.findById(id)
             .then(data =>{
                 if(!data){
                     res.status(404).send({ message : "Not found user with id "+ id})
@@ -58,9 +58,9 @@ exports.find = (req, res)=>{
             })
 
     }else{
-        User.find()
-            .then(user => {
-                res.send(user)
+        Order.find()
+            .then(order => {
+                res.send(order)
             })
             .catch(err => {
                 res.status(500).send({ message : err.message || "Error Occurred while retriving user information" })
