@@ -29,4 +29,24 @@ route.get('/api/users', controller.find);
 
 route.post('/login', controller.checkCredentials)
 
+//API orders
+
+route.post('/api/orders', controller.create);
+route.get('/api/order', controller.find);
+
+
+//API products
+
+
+route.post('/api/products', controller.create);
+route.get('api/products', controller.find);
+
+
+//API shipping
+
+route.post('api/shipping', controller.create);
+route.post('api/shipping', controller.find)
+
+
+
 module.exports = route;
