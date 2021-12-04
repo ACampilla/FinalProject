@@ -1,9 +1,9 @@
-let carts = document.querySelectorAll(".add-me"); 
-let products = 
+var carts = document.querySelectorAll(".add-cart"); 
+var products = 
 [
 {
 	name: '[2CD SET)TXT (TOMORROWXTOGETHER)',
-	tag: 'https://www.ktown4u.com/goods_files/SH0164/goods_images/000063/GD00062657.default.1.png',
+	tag:'https://www.ktown4u.com/goods_files/SH0164/goods_images/000063/GD00062657.default.1.png',
 	price1: 15.66,
 	inCart: 0
 },
@@ -328,9 +328,9 @@ let products =
 ]
 
 for (let i=0; i < carts.length; i++){
-	carts[i].addEventListener("click", () =>{
+	carts[i].addEventListener('click', () =>{
 		cartNumber(products[i]);
-		totalCost(products[i]);
+		//totalCost(products[i]);
 	})
 }
 
@@ -342,12 +342,11 @@ function onLoadCartNumbers(){
 	document.querySelector("span").textContent = productNumbers;
 	}
 	
-}	
+}
 
 
 
 function cartNumber(products){
-	
 	let productNumbers = localStorage.getItem("cartNumber");
 	productNumbers = parseInt(productNumbers);
 	if( productNumbers){		
@@ -363,8 +362,8 @@ function cartNumber(products){
 }
 
 function setItems(products) {
-	let cartItems = localStorage.getItem("productsInCart");
-		cartItems = JSON.parse(cartItems);
+	let cartItems = localStorage.getItem('productsInCart');
+	cartItems = JSON.parse(cartItems);
 	
 	if(cartItems != null){
 		
@@ -382,7 +381,7 @@ function setItems(products) {
 		}	
 	}	
 	
-	localStorage.setItem("productsInCart", JSON.stringify
+	localStorage.setItems("productsInCart", JSON.stringify
 	(cartItems));
 }
 
@@ -398,7 +397,7 @@ function totalCost(products){
 	} else {
 		localStorage.setItem("totalCost", products.price1);
 	}
-}
+} 
 
 function displayCart(){
 	let cartItems = localStorage.getItem("productsInCart");
@@ -440,8 +439,8 @@ function displayCart(){
 					</h10>		
 		`;
 	}
-}
+} 
 
 
 onLoadCartNumbers();
-displayCart();
+displayCart(); 
