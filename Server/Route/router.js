@@ -27,6 +27,7 @@ route.get('/signup', services.signup)
 route.post('/api/users', controller.create);
 route.get('/api/users', controller.find);
 
+
 route.post('/login', controller.checkCredentials)
 
 //API orders
@@ -40,7 +41,6 @@ route.get('/api/order', controller.find);
 
 route.post('/api/products', controller.create);
 route.get('api/products', controller.find);
-
 
 //API shipping
 
