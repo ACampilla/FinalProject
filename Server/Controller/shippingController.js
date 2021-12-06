@@ -42,13 +42,13 @@ exports.create = (req,res)=>{
                 Shipping.findById(id)
                     .then(data =>{
                         if(!data){
-                            res.status(404).send({ message : "Not found user with id "+ id})
+                            res.status(404).send({ message : "Not found shipping with id "+ id})
                         }else{
                             res.send(data)
                         }
                     })
                     .catch(err =>{
-                        res.status(500).send({ message: "Erro retrieving user with id " + id})
+                        res.status(500).send({ message: "Error retrieving shipping with id " + id})
                     })
         
             }else{
@@ -57,7 +57,7 @@ exports.create = (req,res)=>{
                         res.send(shipping)
                     })
                     .catch(err => {
-                        res.status(500).send({ message : err.message || "Error Occurred while retriving user information" })
+                        res.status(500).send({ message : err.message || "Error Occurred while retriving shipping information" })
                     })
             }
         
@@ -76,13 +76,13 @@ exports.update = (req, res)=>{
     Shipping.findByIdAndUpdate(id, req.body, { useFindAndModify: false})
         .then(data => {
             if(!data){
-                res.status(404).send({ message : `Cannot Update user with ${id}. Maybe user not found!`})
+                res.status(404).send({ message : `Cannot Update shipping with ${id}. Maybe user not found!`})
             }else{
                 res.send(data)
             }
         })
         .catch(err =>{
-            res.status(500).send({ message : "Error Update user information"})
+            res.status(500).send({ message : "Error Update shipping information"})
         })
 }
 
@@ -96,13 +96,13 @@ exports.delete = (req, res)=>{
                 res.status(404).send({ message : `Cannot Delete with id ${id}. Maybe id is wrong`})
             }else{
                 res.send({
-                    message : "User was deleted successfully!"
+                    message : "shipping was deleted successfully!"
                 })
             }
         })
         .catch(err =>{
             res.status(500).send({
-                message: "Could not delete User with id=" + id
+                message: "Could not delete shipping with id=" + id
             });
         });
 }

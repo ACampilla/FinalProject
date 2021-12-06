@@ -48,13 +48,13 @@ exports.find = (req, res)=>{
         Order.findById(id)
             .then(data =>{
                 if(!data){
-                    res.status(404).send({ message : "Not found user with id "+ id})
+                    res.status(404).send({ message : "Not found order with id "+ id})
                 }else{
                     res.send(data)
                 }
             })
             .catch(err =>{
-                res.status(500).send({ message: "Erro retrieving user with id " + id})
+                res.status(500).send({ message: "Erro retrieving order with id " + id})
             })
 
     }else{
@@ -63,7 +63,7 @@ exports.find = (req, res)=>{
                 res.send(order)
             })
             .catch(err => {
-                res.status(500).send({ message : err.message || "Error Occurred while retriving user information" })
+                res.status(500).send({ message : err.message || "Error Occurred while retriving order information" })
             })
     }
 
@@ -82,13 +82,13 @@ exports.update = (req, res)=>{
     Order.findByIdAndUpdate(id, req.body, { useFindAndModify: false})
         .then(data => {
             if(!data){
-                res.status(404).send({ message : `Cannot Update user with ${id}. Maybe user not found!`})
+                res.status(404).send({ message : `Cannot Update order with ${id}. Maybe user not found!`})
             }else{
                 res.send(data)
             }
         })
         .catch(err =>{
-            res.status(500).send({ message : "Error Update user information"})
+            res.status(500).send({ message : "Error Update order information"})
         })
 }
 
@@ -102,13 +102,13 @@ exports.delete = (req, res)=>{
                 res.status(404).send({ message : `Cannot Delete with id ${id}. Maybe id is wrong`})
             }else{
                 res.send({
-                    message : "User was deleted successfully!"
+                    message : "Order was deleted successfully!"
                 })
             }
         })
         .catch(err =>{
             res.status(500).send({
-                message: "Could not delete User with id=" + id
+                message: "Could not delete order with id=" + id
             });
         });
 }
