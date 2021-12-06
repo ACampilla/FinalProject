@@ -330,7 +330,7 @@ var products =
 for (let i=0; i < carts.length; i++){
 	carts[i].addEventListener('click', () =>{
 		cartNumber(products[i]);
-		//totalCost(products[i]);
+		totalCost(products[i]);
 	})
 }
 

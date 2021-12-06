@@ -7,8 +7,8 @@ exports.create = (req,res)=>{
         return;
     }
 
-
-const order = new Order({
+//new products
+const products = new Products({
 
 Prod_ID:body.Prod_ID,
 Unit_Price:body.Unit_Price,
@@ -17,7 +17,7 @@ Category:body.Category
 
 })
 
-
+// save products in the database
 products
 .save(products)
 .then(data => {
@@ -33,6 +33,7 @@ products
 
 }
 
+// retrieve and return all products/ retrive and return a single products
 exports.find = (req, res)=>{
 
     if(req.query.id){
@@ -41,13 +42,13 @@ exports.find = (req, res)=>{
         Products.findById(id)
             .then(data =>{
                 if(!data){
-                    res.status(404).send({ message : "Not found user with id "+ id})
+                    res.status(404).send({ message : "Not found product with id "+ id})
                 }else{
                     res.send(data)
                 }
             })
             .catch(err =>{
-                res.status(500).send({ message: "Erro retrieving user with id " + id})
+                res.status(500).send({ message: "Erro retrieving product with id " + id})
             })
 
     }else{
@@ -56,7 +57,7 @@ exports.find = (req, res)=>{
                 res.send(products)
             })
             .catch(err => {
-                res.status(500).send({ message : err.message || "Error Occurred while retriving user information" })
+                res.status(500).send({ message : err.message || "Error Occurred while retriving product information" })
             })
     }
 
@@ -75,7 +76,7 @@ exports.update = (req, res)=>{
     Products.findByIdAndUpdate(id, req.body, { useFindAndModify: false})
         .then(data => {
             if(!data){
-                res.status(404).send({ message : `Cannot Update user with ${id}. Maybe user not found!`})
+                res.status(404).send({ message : `Cannot Update product with ${id}. Maybe user not found!`})
             }else{
                 res.send(data)
             }
@@ -95,13 +96,13 @@ exports.delete = (req, res)=>{
                 res.status(404).send({ message : `Cannot Delete with id ${id}. Maybe id is wrong`})
             }else{
                 res.send({
-                    message : "User was deleted successfully!"
+                    message : "order was deleted successfully!"
                 })
             }
         })
         .catch(err =>{
             res.status(500).send({
-                message: "Could not delete User with id=" + id
+                message: "Could not delete order with id=" + id
             });
         });
 }
