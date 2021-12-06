@@ -18,7 +18,7 @@ exports.create = (req,res)=>{
         Order_Status: body.Order_Status,
         Order_Date: body.Order_Date,
         Order_QTY: body.Order_QTY,
-        Order_Price: body.Order.Order_Price,
+        Order_Price: body.Order_Price,
         Order_Users:  body.Order_Users,
         Order_Products: body.Order_Products
     })
