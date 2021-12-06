@@ -79,7 +79,7 @@ exports.update = (req, res)=>{
     }
 
     const id = req.params.id;
-    User.findByIdAndUpdate(id, req.body, { useFindAndModify: false})
+    Order.findByIdAndUpdate(id, req.body, { useFindAndModify: false})
         .then(data => {
             if(!data){
                 res.status(404).send({ message : `Cannot Update user with ${id}. Maybe user not found!`})
@@ -96,7 +96,7 @@ exports.update = (req, res)=>{
 exports.delete = (req, res)=>{
     const id = req.params.id;
 
-    User.findByIdAndDelete(id)
+    Order.findByIdAndDelete(id)
         .then(data => {
             if(!data){
                 res.status(404).send({ message : `Cannot Delete with id ${id}. Maybe id is wrong`})
