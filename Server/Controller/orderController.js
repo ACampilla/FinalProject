@@ -11,7 +11,7 @@ exports.create = (req,res)=>{
         return;
     }
 
-    // new user
+    // new order
     const order = new Order({
      
         Order_ID: body.Order_ID,
@@ -23,7 +23,7 @@ exports.create = (req,res)=>{
         Order_Products: body.Order_Products
     })
 
-    // save user in the database
+    // save order in the database
     order
         .save(order)
         .then(data => {
@@ -39,7 +39,7 @@ exports.create = (req,res)=>{
 
 }
 
-// retrieve and return all users/ retrive and return a single user
+// retrieve and return all order/ retrive and return a single order
 exports.find = (req, res)=>{
 
     if(req.query.id){

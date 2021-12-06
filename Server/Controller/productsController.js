@@ -7,8 +7,8 @@ exports.create = (req,res)=>{
         return;
     }
 
-
-const order = new Order({
+//new products
+const products = new Products({
 
 Prod_ID:body.Prod_ID,
 Unit_Price:body.Unit_Price,
@@ -17,7 +17,7 @@ Category:body.Category
 
 })
 
-
+// save products in the database
 products
 .save(products)
 .then(data => {
@@ -33,6 +33,7 @@ products
 
 }
 
+// retrieve and return all products/ retrive and return a single products
 exports.find = (req, res)=>{
 
     if(req.query.id){

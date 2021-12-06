@@ -6,7 +6,7 @@ exports.create = (req,res)=>{
         res.status(400).send({ message : "Input content!"});
         return;
     }
-
+    //new shipping
     const shipping = new Shipping({
 
         Shipping_ID:body.Shipping_ID,
@@ -18,7 +18,7 @@ exports.create = (req,res)=>{
 
         })
         
-        
+     // save shipping in the database   
         shipping
         .save(shipping)
         .then(data => {
@@ -33,7 +33,7 @@ exports.create = (req,res)=>{
         });
         
         }
-        
+     // retrieve and return all shipping/ retrive and return a single shipping  
         exports.find = (req, res)=>{
         
             if(req.query.id){
@@ -64,7 +64,7 @@ exports.create = (req,res)=>{
             
         }
         
-        // Update 
+// Update 
 exports.update = (req, res)=>{
     if(!req.body){
         return res
